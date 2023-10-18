@@ -12,10 +12,16 @@
 		"notifications",
 		"scripting"
 	],
+	"browser_specific_settings": {
+		"gecko": {
+		  "id": "pegadevtools@marcin-l",
+		  "strict_min_version": "42.0"
+		}
+	},	  
 	"host_permissions": ["<all_urls>"],
 	"incognito":"spanning",
 	"background": {
-		"service_worker": "background.js"
+		"scripts" : ["background.js"]
 	},
 	"options_ui": {
 		"page": "settings.html",
